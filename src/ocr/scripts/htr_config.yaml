@@ -1,0 +1,16 @@
+save_dir: 'data/experiments/Cyrillic_Handwriting_CRNN'
+dataset_root: 'data/raw/Cyrillic_Handwriting'
+image:
+  height: 32
+  width: 128
+optimizer:
+  lr: 0.0001
+dataloader:
+  num_workers: 0
+train:
+  csv_filename: 'train.tsv'
+  epochs: 100
+  batch_size: 64
+val:
+  csv_filename: 'test.tsv'
+  batch_size: 64
